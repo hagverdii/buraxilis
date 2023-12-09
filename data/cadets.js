@@ -682,7 +682,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'III',
-			name: 'Mustafayev Nuru ',
+			name: 'Mustafayev Nuru Ceyhun',
 		},
 		20: {
 			rank: 'p/sıravi',
@@ -692,7 +692,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'III',
-			name: 'Mustafayev Ruhlan',
+			name: 'Mustafayev Ruhlan Mahir',
 		},
 		21: {
 			rank: 'p/sıravi',
@@ -764,7 +764,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'IV',
-			name: 'Əmənov Səyyad ',
+			name: 'Əmənov Səyyad Asif',
 		},
 		3: {
 			rank: 'p/sıravi',
@@ -1338,7 +1338,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'VI',
-			name: 'Əsədzadə Kənan ',
+			name: 'Əsədzadə Kənan Azad',
 		},
 		9: {
 			rank: 'p/sıravi',
@@ -1388,7 +1388,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'VI',
-			name: 'Hümmətli Fərhad ',
+			name: 'Hümmətli Fərhad Etibar',
 		},
 		14: {
 			rank: 'p/sıravi',
@@ -1498,7 +1498,7 @@ export const cadets = {
 			study_three: false,
 			study_two: false,
 			group: 'VI',
-			name: 'Xəlilov Rafiq ',
+			name: 'Xəlilov Rafiq Şahin',
 		},
 		25: {
 			rank: 'p/sıravi',

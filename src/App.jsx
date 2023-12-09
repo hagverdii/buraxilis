@@ -11,6 +11,11 @@ const App = () => {
 	const [sixthGroup, setSixthGroup] = useState({ ...cadets.sixthGroup })
 	const [seventhGroup, setSeventhGroup] = useState({ ...cadets.seventhGroup })
 
+	let counter1 = 0
+	let counter2 = 0
+	let counter3 = 0
+	let counter4 = 0
+
 	return (
 		<>
 			<div className='buttons'>
@@ -970,9 +975,10 @@ const App = () => {
 				}}
 			>
 				<p>Buraxılış siyahısı</p>
-				<table style={{ width: '300px' }}>
+				<table style={{ width: '350px' }}>
 					<thead>
 						<tr>
+							<th>S/s</th>
 							<th>Rütbəsi</th>
 							<th>Soyad, ad və ata adı</th>
 							<th>Taqım</th>
@@ -988,8 +994,10 @@ const App = () => {
 								!firstGroup[key].study_three &&
 								!firstGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={firstGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].name}</td>
 										<td>{firstGroup[key].group}</td>
@@ -1007,8 +1015,10 @@ const App = () => {
 								!secondGroup[key].study_three &&
 								!secondGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={secondGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].name}</td>
 										<td>{secondGroup[key].group}</td>
@@ -1026,8 +1036,10 @@ const App = () => {
 								!thirdGroup[key].study_three &&
 								!thirdGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={thirdGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].name}</td>
 										<td>{thirdGroup[key].group}</td>
@@ -1044,8 +1056,10 @@ const App = () => {
 								!fourthGroup[key].study_three &&
 								!fourthGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={fourthGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].name}</td>
 										<td>{fourthGroup[key].group}</td>
@@ -1062,8 +1076,10 @@ const App = () => {
 								!fifthGroup[key].study_three &&
 								!fifthGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={fifthGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].name}</td>
 										<td>{fifthGroup[key].group}</td>
@@ -1080,8 +1096,10 @@ const App = () => {
 								!sixthGroup[key].study_three &&
 								!sixthGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={sixthGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].name}</td>
 										<td>{sixthGroup[key].group}</td>
@@ -1098,8 +1116,10 @@ const App = () => {
 								!seventhGroup[key].study_three &&
 								!seventhGroup[key].study_two
 							) {
+								counter1++
 								return (
 									<tr key={seventhGroup[key].name + 'b'}>
+										<td>{counter1}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].name}</td>
 										<td>{seventhGroup[key].group}</td>
@@ -1123,6 +1143,7 @@ const App = () => {
 				<table>
 					<thead>
 						<tr>
+							<th>S/s</th>
 							<th>Rütbəsi</th>
 							<th>Soyad, ad və ata adı</th>
 							<th>Taqım</th>
@@ -1138,8 +1159,10 @@ const App = () => {
 								!firstGroup[key].study_three &&
 								!firstGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={firstGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].name}</td>
 										<td>{firstGroup[key].group}</td>
@@ -1157,8 +1180,10 @@ const App = () => {
 								!secondGroup[key].study_three &&
 								!secondGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={secondGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].name}</td>
 										<td>{secondGroup[key].group}</td>
@@ -1176,8 +1201,10 @@ const App = () => {
 								!thirdGroup[key].study_three &&
 								!thirdGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={thirdGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].name}</td>
 										<td>{thirdGroup[key].group}</td>
@@ -1195,8 +1222,10 @@ const App = () => {
 								!fourthGroup[key].study_three &&
 								!fourthGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={fourthGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].name}</td>
 										<td>{fourthGroup[key].group}</td>
@@ -1214,8 +1243,10 @@ const App = () => {
 								!fifthGroup[key].study_three &&
 								!fifthGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={fifthGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].name}</td>
 										<td>{fifthGroup[key].group}</td>
@@ -1233,8 +1264,10 @@ const App = () => {
 								!sixthGroup[key].study_three &&
 								!sixthGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={sixthGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].name}</td>
 										<td>{sixthGroup[key].group}</td>
@@ -1251,8 +1284,10 @@ const App = () => {
 								!seventhGroup[key].study_three &&
 								!seventhGroup[key].study_two
 							) {
+								counter2++
 								return (
 									<tr key={seventhGroup[key].name + 'e'}>
+										<td>{counter2}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].rank}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].name}</td>
 										<td>{seventhGroup[key].group}</td>
@@ -1277,6 +1312,7 @@ const App = () => {
 				<table>
 					<thead>
 						<tr>
+							<th>S/s</th>
 							<th>Soyad, ad və ata adı</th>
 							<th>Taqım</th>
 							<th>Məhdudiyyət səbəbi</th>
@@ -1289,8 +1325,10 @@ const App = () => {
 								firstGroup[key].sport_two ||
 								firstGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={firstGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].name}</td>
 										<td>{firstGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1315,8 +1353,10 @@ const App = () => {
 								secondGroup[key].sport_two ||
 								secondGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={secondGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].name}</td>
 										<td>{secondGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1343,8 +1383,10 @@ const App = () => {
 								thirdGroup[key].sport_two ||
 								thirdGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={thirdGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].name}</td>
 										<td>{thirdGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1369,8 +1411,10 @@ const App = () => {
 								fourthGroup[key].sport_two ||
 								fourthGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={fourthGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].name}</td>
 										<td>{fourthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1397,8 +1441,10 @@ const App = () => {
 								fifthGroup[key].sport_two ||
 								fifthGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={fifthGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].name}</td>
 										<td>{fifthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1423,8 +1469,10 @@ const App = () => {
 								sixthGroup[key].sport_two ||
 								sixthGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={sixthGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].name}</td>
 										<td>{sixthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1449,8 +1497,10 @@ const App = () => {
 								seventhGroup[key].sport_two ||
 								seventhGroup[key].study_two
 							) {
+								counter3++
 								return (
 									<tr key={seventhGroup[key].name + 't'}>
+										<td>{counter3}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].name}</td>
 										<td>{seventhGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1487,6 +1537,7 @@ const App = () => {
 				<table>
 					<thead>
 						<tr>
+							<th>S/s</th>
 							<th>Soyad, ad və ata adı</th>
 							<th>Taqım</th>
 							<th>Məhdudiyyət səbəbi</th>
@@ -1500,8 +1551,10 @@ const App = () => {
 								!firstGroup[key].study_two &&
 								!firstGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={firstGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{firstGroup[key].name}</td>
 										<td>{firstGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1522,8 +1575,10 @@ const App = () => {
 								!secondGroup[key].study_two &&
 								!secondGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={secondGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{secondGroup[key].name}</td>
 										<td>{secondGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1546,8 +1601,10 @@ const App = () => {
 								!thirdGroup[key].study_two &&
 								!thirdGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={thirdGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{thirdGroup[key].name}</td>
 										<td>{thirdGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1568,8 +1625,10 @@ const App = () => {
 								!fourthGroup[key].study_two &&
 								!fourthGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={fourthGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{fourthGroup[key].name}</td>
 										<td>{fourthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1592,8 +1651,10 @@ const App = () => {
 								!fifthGroup[key].study_two &&
 								!fifthGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={fifthGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{fifthGroup[key].name}</td>
 										<td>{fifthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1614,8 +1675,10 @@ const App = () => {
 								!sixthGroup[key].study_two &&
 								!sixthGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={sixthGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{sixthGroup[key].name}</td>
 										<td>{sixthGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
@@ -1636,8 +1699,10 @@ const App = () => {
 								!seventhGroup[key].study_two &&
 								!seventhGroup[key].sport_two
 							) {
+								counter4++
 								return (
 									<tr key={seventhGroup[key].name + 'k'}>
+										<td>{counter4}</td>
 										<td style={{ textAlign: 'left' }}>{seventhGroup[key].name}</td>
 										<td>{seventhGroup[key].group}</td>
 										<td style={{ textAlign: 'left' }}>
