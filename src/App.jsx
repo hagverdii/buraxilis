@@ -32,7 +32,7 @@ const App = () => {
 				>
 					Sıfırla
 				</button>
-				<button
+				{/* <button
 					onClick={() =>
 						console.log(
 							firstGroup[1],
@@ -46,7 +46,7 @@ const App = () => {
 					}
 				>
 					Test
-				</button>
+				</button> */}
 			</div>
 			<div className='groups-container'>
 				{/* 1 taq */}
