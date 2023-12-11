@@ -32,6 +32,21 @@ const App = () => {
 				>
 					Sıfırla
 				</button>
+				<button
+					onClick={() =>
+						console.log(
+							firstGroup[1],
+							secondGroup[1],
+							thirdGroup[1],
+							fourthGroup[1],
+							fifthGroup[1],
+							sixthGroup[1],
+							seventhGroup[1]
+						)
+					}
+				>
+					Test
+				</button>
 			</div>
 			<div className='groups-container'>
 				{/* 1 taq */}
@@ -50,6 +65,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -160,6 +176,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={firstGroup[index + 1].duty}
+												onChange={() =>
+													setFirstGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -183,6 +216,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -293,6 +327,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={secondGroup[index + 1].duty}
+												onChange={() =>
+													setSecondGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -316,6 +367,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -426,6 +478,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={thirdGroup[index + 1].duty}
+												onChange={() =>
+													setThirdGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -449,6 +518,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -559,6 +629,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={fourthGroup[index + 1].duty}
+												onChange={() =>
+													setFourthGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -582,6 +669,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -692,6 +780,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={fifthGroup[index + 1].duty}
+												onChange={() =>
+													setFifthGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -715,6 +820,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -825,6 +931,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={sixthGroup[index + 1].duty}
+												onChange={() =>
+													setSixthGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -848,6 +971,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>Xidmət</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -958,6 +1082,23 @@ const App = () => {
 												}
 											/>
 										</td>
+										<td>
+											<input
+												type='checkbox'
+												checked={seventhGroup[index + 1].duty}
+												onChange={() =>
+													setSeventhGroup((prev) => {
+														return {
+															...prev,
+															[index + 1]: {
+																...prev[index + 1],
+																duty: !prev[index + 1].duty,
+															},
+														}
+													})
+												}
+											/>
+										</td>
 									</tr>
 								)
 							})}
@@ -987,6 +1128,7 @@ const App = () => {
 					<tbody>
 						{Object.keys(firstGroup)?.map((key) => {
 							if (
+								!firstGroup[key].duty &&
 								!firstGroup[key].perfect &&
 								!firstGroup[key].violation &&
 								!firstGroup[key].sport_three &&
@@ -1008,6 +1150,7 @@ const App = () => {
 						})}
 						{Object.keys(secondGroup)?.map((key) => {
 							if (
+								!secondGroup[key].duty &&
 								!secondGroup[key].perfect &&
 								!secondGroup[key].violation &&
 								!secondGroup[key].sport_three &&
@@ -1029,6 +1172,7 @@ const App = () => {
 						})}
 						{Object.keys(thirdGroup)?.map((key) => {
 							if (
+								!thirdGroup[key].duty &&
 								!thirdGroup[key].perfect &&
 								!thirdGroup[key].violation &&
 								!thirdGroup[key].sport_three &&
@@ -1049,6 +1193,7 @@ const App = () => {
 						})}
 						{Object.keys(fourthGroup)?.map((key) => {
 							if (
+								!fourthGroup[key].duty &&
 								!fourthGroup[key].perfect &&
 								!fourthGroup[key].violation &&
 								!fourthGroup[key].sport_three &&
@@ -1069,6 +1214,7 @@ const App = () => {
 						})}
 						{Object.keys(fifthGroup)?.map((key) => {
 							if (
+								!fifthGroup[key].duty &&
 								!fifthGroup[key].perfect &&
 								!fifthGroup[key].violation &&
 								!fifthGroup[key].sport_three &&
@@ -1089,6 +1235,7 @@ const App = () => {
 						})}
 						{Object.keys(sixthGroup)?.map((key) => {
 							if (
+								!sixthGroup[key].duty &&
 								!sixthGroup[key].perfect &&
 								!sixthGroup[key].violation &&
 								!sixthGroup[key].sport_three &&
@@ -1109,6 +1256,7 @@ const App = () => {
 						})}
 						{Object.keys(seventhGroup)?.map((key) => {
 							if (
+								!seventhGroup[key].duty &&
 								!seventhGroup[key].perfect &&
 								!seventhGroup[key].violation &&
 								!seventhGroup[key].sport_three &&
