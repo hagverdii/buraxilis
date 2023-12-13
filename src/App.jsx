@@ -3,13 +3,27 @@ import { cadets } from '../data/cadets'
 import './App.css'
 
 const App = () => {
-	const [firstGroup, setFirstGroup] = useState({ ...cadets.firstGroup })
-	const [secondGroup, setSecondGroup] = useState({ ...cadets.secondGroup })
-	const [thirdGroup, setThirdGroup] = useState({ ...cadets.thirdGroup })
-	const [fourthGroup, setFourthGroup] = useState({ ...cadets.fourthGroup })
-	const [fifthGroup, setFifthGroup] = useState({ ...cadets.fifthGroup })
-	const [sixthGroup, setSixthGroup] = useState({ ...cadets.sixthGroup })
-	const [seventhGroup, setSeventhGroup] = useState({ ...cadets.seventhGroup })
+	const [firstGroup, setFirstGroup] = useState(
+		JSON.parse(localStorage.getItem('firstGroup')) || { ...cadets.firstGroup }
+	)
+	const [secondGroup, setSecondGroup] = useState(
+		JSON.parse(localStorage.getItem('secondGroup')) || { ...cadets.secondGroup }
+	)
+	const [thirdGroup, setThirdGroup] = useState(
+		JSON.parse(localStorage.getItem('thirdGroup')) || { ...cadets.thirdGroup }
+	)
+	const [fourthGroup, setFourthGroup] = useState(
+		JSON.parse(localStorage.getItem('fourthGroup')) || { ...cadets.fourthGroup }
+	)
+	const [fifthGroup, setFifthGroup] = useState(
+		JSON.parse(localStorage.getItem('fifthGroup')) || { ...cadets.fifthGroup }
+	)
+	const [sixthGroup, setSixthGroup] = useState(
+		JSON.parse(localStorage.getItem('sixthGroup')) || { ...cadets.sixthGroup }
+	)
+	const [seventhGroup, setSeventhGroup] = useState(
+		JSON.parse(localStorage.getItem('seventhGroup')) || { ...cadets.seventhGroup }
+	)
 
 	let counter1 = 0
 	let counter2 = 0
@@ -28,9 +42,29 @@ const App = () => {
 						setFifthGroup({ ...cadets.fifthGroup })
 						setSixthGroup({ ...cadets.sixthGroup })
 						setSeventhGroup({ ...cadets.seventhGroup })
+						localStorage.removeItem('firstGroup')
+						localStorage.removeItem('secondGroup')
+						localStorage.removeItem('thirdGroup')
+						localStorage.removeItem('fourthGroup')
+						localStorage.removeItem('fifthGroup')
+						localStorage.removeItem('sixthGroup')
+						localStorage.removeItem('seventhGroup')
 					}}
 				>
 					Sıfırla
+				</button>
+				<button
+					onClick={() => {
+						localStorage.setItem('firstGroup', JSON.stringify(firstGroup))
+						localStorage.setItem('secondGroup', JSON.stringify(secondGroup))
+						localStorage.setItem('thirdGroup', JSON.stringify(thirdGroup))
+						localStorage.setItem('fourthGroup', JSON.stringify(fourthGroup))
+						localStorage.setItem('fifthGroup', JSON.stringify(fifthGroup))
+						localStorage.setItem('sixthGroup', JSON.stringify(sixthGroup))
+						localStorage.setItem('seventhGroup', JSON.stringify(seventhGroup))
+					}}
+				>
+					Yadda saxla
 				</button>
 				{/* <button
 					onClick={() =>
