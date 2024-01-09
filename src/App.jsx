@@ -90,7 +90,7 @@ const App = () => {
 					<p>
 						<strong>I taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -101,6 +101,7 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
 								<th>Atəş</th>
 								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
@@ -220,6 +221,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={firstGroup[index + 1].exam}
+													onChange={() =>
+														setFirstGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={firstGroup[index + 1].shooting}
 													onChange={() =>
 														setFirstGroup((prev) => {
@@ -281,7 +299,7 @@ const App = () => {
 					<p>
 						<strong>II taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -292,6 +310,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -409,6 +430,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={secondGroup[index + 1].exam}
+													onChange={() =>
+														setSecondGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={secondGroup[index + 1].shooting}
 													onChange={() =>
 														setSecondGroup((prev) => {
@@ -470,7 +508,7 @@ const App = () => {
 					<p>
 						<strong>III taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -481,6 +519,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -598,6 +639,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={thirdGroup[index + 1].exam}
+													onChange={() =>
+														setThirdGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={thirdGroup[index + 1].shooting}
 													onChange={() =>
 														setThirdGroup((prev) => {
@@ -659,7 +717,7 @@ const App = () => {
 					<p>
 						<strong>IV taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -670,6 +728,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -787,6 +848,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={fourthGroup[index + 1].exam}
+													onChange={() =>
+														setFourthGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={fourthGroup[index + 1].shooting}
 													onChange={() =>
 														setFourthGroup((prev) => {
@@ -848,7 +926,7 @@ const App = () => {
 					<p>
 						<strong>V taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -859,6 +937,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -976,6 +1057,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={fifthGroup[index + 1].exam}
+													onChange={() =>
+														setFifthGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={fifthGroup[index + 1].shooting}
 													onChange={() =>
 														setFifthGroup((prev) => {
@@ -1037,7 +1135,7 @@ const App = () => {
 					<p>
 						<strong>VI taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -1048,6 +1146,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -1165,6 +1266,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={sixthGroup[index + 1].exam}
+													onChange={() =>
+														setSixthGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={sixthGroup[index + 1].shooting}
 													onChange={() =>
 														setSixthGroup((prev) => {
@@ -1226,7 +1344,7 @@ const App = () => {
 					<p>
 						<strong>VII taqım</strong>
 					</p>
-					<table style={{ width: '60%' }}>
+					<table style={{ width: '70%' }}>
 						<thead>
 							<tr>
 								<th>№</th>
@@ -1237,6 +1355,9 @@ const App = () => {
 								<th>İdman kəsr</th>
 								<th>Tədris kafi</th>
 								<th>Tədris kəsr</th>
+								<th>İmtahan kəsr</th>
+								<th>Atəş</th>
+								<th>Sıra və nizamnamə</th>
 								<th>Xidmət</th>
 							</tr>
 						</thead>
@@ -1354,6 +1475,23 @@ const App = () => {
 											<td>
 												<input
 													type='checkbox'
+													checked={seventhGroup[index + 1].exam}
+													onChange={() =>
+														setSeventhGroup((prev) => {
+															return {
+																...prev,
+																[index + 1]: {
+																	...prev[index + 1],
+																	exam: !prev[index + 1].exam,
+																},
+															}
+														})
+													}
+												/>
+											</td>
+											<td>
+												<input
+													type='checkbox'
 													checked={seventhGroup[index + 1].shooting}
 													onChange={() =>
 														setSeventhGroup((prev) => {
@@ -1440,7 +1578,8 @@ const App = () => {
 								!firstGroup[key].study_three &&
 								!firstGroup[key].study_two &&
 								!firstGroup[key].shooting &&
-								!firstGroup[key].stepping
+								!firstGroup[key].stepping &&
+								!firstGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1468,7 +1607,8 @@ const App = () => {
 								!secondGroup[key].study_three &&
 								!secondGroup[key].study_two &&
 								!secondGroup[key].shooting &&
-								!secondGroup[key].stepping
+								!secondGroup[key].stepping &&
+								!secondGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1496,7 +1636,8 @@ const App = () => {
 								!thirdGroup[key].study_three &&
 								!thirdGroup[key].study_two &&
 								!thirdGroup[key].shooting &&
-								!thirdGroup[key].stepping
+								!thirdGroup[key].stepping &&
+								!thirdGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1523,7 +1664,8 @@ const App = () => {
 								!fourthGroup[key].study_three &&
 								!fourthGroup[key].study_two &&
 								!fourthGroup[key].shooting &&
-								!fourthGroup[key].stepping
+								!fourthGroup[key].stepping &&
+								!fourthGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1550,7 +1692,8 @@ const App = () => {
 								!fifthGroup[key].study_three &&
 								!fifthGroup[key].study_two &&
 								!fifthGroup[key].shooting &&
-								!fifthGroup[key].stepping
+								!fifthGroup[key].stepping &&
+								!fifthGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1577,7 +1720,8 @@ const App = () => {
 								!sixthGroup[key].study_three &&
 								!sixthGroup[key].study_two &&
 								!sixthGroup[key].shooting &&
-								!sixthGroup[key].stepping
+								!sixthGroup[key].stepping &&
+								!sixthGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1604,7 +1748,8 @@ const App = () => {
 								!seventhGroup[key].study_three &&
 								!seventhGroup[key].study_two &&
 								!seventhGroup[key].shooting &&
-								!seventhGroup[key].stepping
+								!seventhGroup[key].stepping &&
+								!seventhGroup[key].exam
 							) {
 								counter1++
 								return (
@@ -1653,7 +1798,8 @@ const App = () => {
 								!firstGroup[key].study_three &&
 								!firstGroup[key].study_two &&
 								!firstGroup[key].shooting &&
-								!firstGroup[key].stepping
+								!firstGroup[key].stepping &&
+								!firstGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1680,7 +1826,8 @@ const App = () => {
 								!secondGroup[key].study_three &&
 								!secondGroup[key].study_two &&
 								!secondGroup[key].shooting &&
-								!secondGroup[key].stepping
+								!secondGroup[key].stepping &&
+								!secondGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1707,7 +1854,8 @@ const App = () => {
 								!thirdGroup[key].study_three &&
 								!thirdGroup[key].study_two &&
 								!thirdGroup[key].shooting &&
-								!thirdGroup[key].stepping
+								!thirdGroup[key].stepping &&
+								!thirdGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1734,7 +1882,8 @@ const App = () => {
 								!fourthGroup[key].study_three &&
 								!fourthGroup[key].study_two &&
 								!fourthGroup[key].shooting &&
-								!fourthGroup[key].stepping
+								!fourthGroup[key].stepping &&
+								!fourthGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1761,7 +1910,8 @@ const App = () => {
 								!fifthGroup[key].study_three &&
 								!fifthGroup[key].study_two &&
 								!fifthGroup[key].shooting &&
-								!fifthGroup[key].stepping
+								!fifthGroup[key].stepping &&
+								!fifthGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1788,7 +1938,8 @@ const App = () => {
 								!sixthGroup[key].study_three &&
 								!sixthGroup[key].study_two &&
 								!sixthGroup[key].shooting &&
-								!sixthGroup[key].stepping
+								!sixthGroup[key].stepping &&
+								!sixthGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1814,7 +1965,8 @@ const App = () => {
 								!seventhGroup[key].study_three &&
 								!seventhGroup[key].study_two &&
 								!seventhGroup[key].shooting &&
-								!seventhGroup[key].stepping
+								!seventhGroup[key].stepping &&
+								!seventhGroup[key].exam
 							) {
 								counter2++
 								return (
@@ -1861,7 +2013,8 @@ const App = () => {
 								firstGroup[key].sport_two ||
 								firstGroup[key].study_two ||
 								firstGroup[key].shooting ||
-								firstGroup[key].stepping
+								firstGroup[key].stepping ||
+								firstGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -1887,6 +2040,9 @@ const App = () => {
 											{firstGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{firstGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{firstGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -1905,7 +2061,8 @@ const App = () => {
 								secondGroup[key].sport_two ||
 								secondGroup[key].study_two ||
 								secondGroup[key].shooting ||
-								secondGroup[key].stepping
+								secondGroup[key].stepping ||
+								secondGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -1931,6 +2088,9 @@ const App = () => {
 											{secondGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{secondGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{secondGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -1949,7 +2109,8 @@ const App = () => {
 								thirdGroup[key].sport_two ||
 								thirdGroup[key].study_two ||
 								thirdGroup[key].shooting ||
-								thirdGroup[key].stepping
+								thirdGroup[key].stepping ||
+								thirdGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -1975,6 +2136,9 @@ const App = () => {
 											{thirdGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{thirdGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{thirdGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -1993,7 +2157,8 @@ const App = () => {
 								fourthGroup[key].sport_two ||
 								fourthGroup[key].study_two ||
 								fourthGroup[key].shooting ||
-								fourthGroup[key].stepping
+								fourthGroup[key].stepping ||
+								fourthGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -2019,6 +2184,9 @@ const App = () => {
 											{fourthGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{fourthGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{fourthGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -2037,7 +2205,8 @@ const App = () => {
 								fifthGroup[key].sport_two ||
 								fifthGroup[key].study_two ||
 								fifthGroup[key].shooting ||
-								fifthGroup[key].stepping
+								fifthGroup[key].stepping ||
+								fifthGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -2063,6 +2232,9 @@ const App = () => {
 											{fifthGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{fifthGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{fifthGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -2081,7 +2253,8 @@ const App = () => {
 								sixthGroup[key].sport_two ||
 								sixthGroup[key].study_two ||
 								sixthGroup[key].shooting ||
-								sixthGroup[key].stepping
+								sixthGroup[key].stepping ||
+								sixthGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -2107,6 +2280,9 @@ const App = () => {
 											{sixthGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
 												: null}
+											{sixthGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
+												: null}
 											{sixthGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
 												: null}
@@ -2125,7 +2301,8 @@ const App = () => {
 								seventhGroup[key].sport_two ||
 								seventhGroup[key].study_two ||
 								seventhGroup[key].shooting ||
-								seventhGroup[key].stepping
+								seventhGroup[key].stepping ||
+								seventhGroup[key].exam
 							) {
 								counter3++
 								return (
@@ -2150,6 +2327,9 @@ const App = () => {
 												: null}
 											{seventhGroup[key].study_two
 												? ' Tədris olunan fəndən qeyri-kafi qiymət almışdır.'
+												: null}
+											{seventhGroup[key].exam
+												? ' "__" fənnindən akademik borcu olmuşdur.'
 												: null}
 											{seventhGroup[key].shooting
 												? ' "Atəş hazırlığı" fənnindən qeyri-kafi qiymət almışdır.'
@@ -2193,7 +2373,8 @@ const App = () => {
 								!firstGroup[key].study_two &&
 								!firstGroup[key].sport_two &&
 								!firstGroup[key].shooting &&
-								!firstGroup[key].stepping
+								!firstGroup[key].stepping &&
+								!firstGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2224,7 +2405,8 @@ const App = () => {
 								!secondGroup[key].study_two &&
 								!secondGroup[key].sport_two &&
 								!secondGroup[key].shooting &&
-								!secondGroup[key].stepping
+								!secondGroup[key].stepping &&
+								!secondGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2254,7 +2436,8 @@ const App = () => {
 								!thirdGroup[key].study_two &&
 								!thirdGroup[key].sport_two &&
 								!thirdGroup[key].shooting &&
-								!thirdGroup[key].stepping
+								!thirdGroup[key].stepping &&
+								!thirdGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2285,7 +2468,8 @@ const App = () => {
 								!fourthGroup[key].study_two &&
 								!fourthGroup[key].sport_two &&
 								!fourthGroup[key].shooting &&
-								!fourthGroup[key].stepping
+								!fourthGroup[key].stepping &&
+								!fourthGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2315,7 +2499,8 @@ const App = () => {
 								!fifthGroup[key].study_two &&
 								!fifthGroup[key].sport_two &&
 								!fifthGroup[key].shooting &&
-								!fifthGroup[key].stepping
+								!fifthGroup[key].stepping &&
+								!fifthGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2345,7 +2530,8 @@ const App = () => {
 								!sixthGroup[key].study_two &&
 								!sixthGroup[key].sport_two &&
 								!sixthGroup[key].shooting &&
-								!sixthGroup[key].stepping
+								!sixthGroup[key].stepping &&
+								!sixthGroup[key].exam
 							) {
 								counter4++
 								return (
@@ -2376,7 +2562,8 @@ const App = () => {
 								!seventhGroup[key].study_two &&
 								!seventhGroup[key].sport_two &&
 								!seventhGroup[key].shooting &&
-								!seventhGroup[key].stepping
+								!seventhGroup[key].stepping &&
+								!seventhGroup[key].exam
 							) {
 								counter4++
 								return (
